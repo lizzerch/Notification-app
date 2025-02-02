@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Notification</title>
+    <title>Penyimpanan Hasil Analisis Cyber</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Buat Template Notifikasi Custom</h1>
-        <form id="notificationForm">
-            <label for="customerName">Nama Customer:</label>
-            <input type="text" id="customerName" name="customerName" required>
+        <h1>Penyimpanan Hasil Analisis Cyber</h1>
+        <form id="analysisForm">
+            <label for="analysisTitle">Judul Analisis:</label>
+            <input type="text" id="analysisTitle" name="analysisTitle" required>
             <br><br>
-            <label for="cyberAnalysis">Hasil Analisis Cyber:</label>
-            <textarea id="cyberAnalysis" name="cyberAnalysis" rows="4" required></textarea>
+            <label for="analysisContent">Hasil Analisis:</label>
+            <textarea id="analysisContent" name="analysisContent" rows="4" required></textarea>
             <br><br>
-            <button type="submit">Buat Notifikasi</button>
+            <button type="submit">Simpan Analisis</button>
         </form>
-        <div id="output" class="output"></div>
+        <hr>
+        <h2>Daftar Analisis Tersimpan</h2>
+        <ul id="analysisList"></ul>
     </div>
     <script src="script.js"></script>
 </body>
